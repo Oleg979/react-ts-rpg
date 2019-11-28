@@ -1,33 +1,54 @@
-.App {
-  text-align: center;
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+table {
+  width: max-content;
+  border-collapse: collapse;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table td {
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+td.free:hover {
+  box-shadow: inset 0px 0px 3px 3px black !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td.chest:hover,
+td.secret:hover {
+  cursor: url("./assets/explore.cur"), auto;
+}
+
+* {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+  scroll-behavior: smooth;
+  font-family: "Righteous", cursive;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  cursor: url("./assets/main.cur"), auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.player {
+  transition: all 0.3s ease-in-out;
+  display: block;
+  position: absolute;
 }
